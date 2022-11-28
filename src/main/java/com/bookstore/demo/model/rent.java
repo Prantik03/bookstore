@@ -13,10 +13,10 @@ public class rent{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="rented_id", nullable=false)
     private int rentedId;
-    @Column(name="bookId", nullable=false)
+    @Column(name="book_id", nullable=false)
     private int bId;
 
-    @Column(name="userId", nullable=false)
+    @Column(name="user_id", nullable=false)
     private int uId;
 
     @CreationTimestamp
@@ -57,7 +57,7 @@ public class rent{
         return returnDateTime;
     }
 
-    public void setReturnDateTime(Date returnDateTime) {
+    public void setReturnDateTime(LocalDateTime returnDateTime) {
         this.returnDateTime = returnDateTime;
     }
 

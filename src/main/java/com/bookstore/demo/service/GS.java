@@ -8,8 +8,11 @@ import org.springframework.http.ResponseEntity;
 
 public interface GS {
 
+    ResponseEntity<HttpStatus> returnBook(int rentedId);
+
     ResponseEntity<HttpStatus> borrowBook(int uId, int bookId);
     ResponseEntity<HttpStatus> reviewBook(int uId, int bookId, String review);
 
 
+    ResponseEntity<HttpStatus> likeBook(int uId, int bookId);
 }
