@@ -24,7 +24,7 @@ public class rent{
     private Date issueDateTime;
 
     @Column(name="returnDateTime", columnDefinition = "TIMESTAMP")
-    private Date returnDateTime;
+    private LocalDateTime returnDateTime;
 
 //    @Column(name="amount", nullable=false)
 //    private int amount;
@@ -53,7 +53,7 @@ public class rent{
         this.issueDateTime = issueDateTime;
     }
 
-    public Date getReturnDateTime() {
+    public LocalDateTime getReturnDateTime() {
         return returnDateTime;
     }
 
