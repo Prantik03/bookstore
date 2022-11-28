@@ -29,13 +29,6 @@ public class UserController {
         user.setuId(uId);
         return ResponseEntity.ok().body(this.userService.updateUser(user));
     }
-
-//    @PutMapping("/users/addmoney/{uId}")
-//    private ResponseEntity<User> addMoney(@PathVariable int uId, @RequestBody User user){
-//        user.setuId(uId);
-//        return ResponseEntity.ok().body(this.userService.addMoney(user));
-//    }
-
     @PutMapping("/users/addmoney/{uId}")
     private ResponseEntity<User> addMoney(@PathVariable int uId, @RequestBody User user){
         user.setuId(uId);
